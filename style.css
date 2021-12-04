@@ -1,0 +1,241 @@
+.App {
+  text-align: center;
+  max-width: 1500;
+}
+.header {
+  font: small-caps bold 15px/1 sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(55, 137, 245);
+  height: 55px;
+}
+.header .ulHeader1 {
+  margin-top: 19px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.header .ulHeader1 li {
+  display: flex;
+  margin-left: 30px;
+}
+.header .ulHeader2 {
+  margin-top: 19px;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: 50px;
+}
+.header .ulHeader2 li {
+  display: flex;
+  margin-left: 60px;
+}
+.header .textOnCenterHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 130px;
+  font-weight: 500;
+}
+
+.body {
+  display: inline;
+}
+
+.body .logo {
+  max-width: 240px;
+  max-height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  float: left;
+  margin-top: 25px;
+}
+
+.body .ulBody1 {
+  display: inline;
+  flex-direction: row;
+  justify-content: flex-start;
+  float: left;
+  margin-left: 70px;
+  margin-top: 50px;
+}
+.body .ulBody1 li {
+  display: inline;
+  margin-left: 50px;
+}
+.body .cardButton {
+  display: inline;
+  float: right;
+  margin-right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(231, 81, 169);
+  border: none;
+}
+.body .search {
+  display: inline;
+  float: right;
+  margin-right: 30px;
+  border-radius: 15px;
+  height: 25px;
+  width: 200px;
+}
+
+.body .price {
+  display: inline;
+  float: right;
+  margin-right: 20px;
+}
+.body .rightBodyContent {
+  margin-top: 50px;
+}
+
+@media (max-width: 1240px) {
+  .body .ulBody1 {
+    margin-left: 0px;
+  }
+  .body .ulBody1 li {
+    margin-left: 25px;
+  }
+  .header .ulHeader1 li img {
+    width: 18px;
+    height: 18px;
+  }
+  .header .ulHeader2 li img {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (max-width: 1160px) {
+  .header {
+    height: 85px;
+  }
+}
+@media (max-width: 1091px) {
+  .header {
+    height: 85px;
+  }
+  .header .ulHeader1 li img {
+    width: 18px;
+    height: 18px;
+  }
+  .header .ulHeader2 li img {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (max-width: 920px) {
+  .body .logo {
+    max-width: 170px;
+    max-height: 85px;
+  }
+  .header .ulHeader1 li img {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .App {
+    min-width: 990px;
+  }
+  .body .ulBody1 {
+    columns: 2;
+  }
+  .body .search {
+    min-width: 120px;
+  }
+  .body .ulBody1 li {
+    margin-left: 0px;
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid rgb(112, 178, 231);
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 1393px) {
+  .body .search {
+    width: 120px;
+  }
+}
+@media (max-width: 1315px) {
+  .body .ulBody1 {
+    margin-left: 0px;
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .App {
+    min-width: 480px;
+  }
+  .body .logo {
+    max-width: 170px;
+    max-height: 85px;
+  }
+  .body .ulBody1 li {
+    margin-left: 0px;
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid rgb(112, 178, 231);
+    border-radius: 10px;
+  }
+  .body .search {
+    width: 100px;
+  }
+  .header .ulHeader1 li img {
+    width: 20px;
+    height: 20px;
+  }
+  .header .ulHeader2 li img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .App {
+    min-width: 885px;
+  }
+  .ulBody1 {
+    max-width: 390px;
+  }
+  .header {
+    height: 80px;
+  }
+  .body .ulBody1 li {
+    margin-left: 0px;
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid rgb(112, 178, 231);
+    border-radius: 10px;
+  }
+  .body .search {
+    width: 120px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+
+/* @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  } */
+
+/* .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  } */
